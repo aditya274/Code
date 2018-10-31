@@ -1,0 +1,45 @@
+//create new directory,open it and perform
+git init
+to create a new git repository
+
+git clone /path
+
+//using a remote server
+git clone username@host:/path
+
+//workflow - three trees.
+Working Directory - holds actual files.
+Index - acts as a staging area.
+Head - points to the last commit made.
+
+//"propose" changes
+git add <filename>
+git add *
+
+//to commit changes (comitted to head)
+git commit -m "Message"
+
+//to send changes from head to remote repo
+git push admin master
+//"master" or any branch we want.
+
+//connect repository to remote sever
+git remote add origin <server>
+
+//to branch
+git checkout -b branchname
+
+//switch back to master branch
+git checkout master
+
+//delete branch
+git branch -d branchname
+
+//push branch to remote repo
+git push origin branchname
+
+//update local repo
+git pull
+
+//merge branch to active branch
+git merge branchname

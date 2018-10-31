@@ -1,0 +1,6 @@
+n = int(raw_input())
+while(n > 0):
+	s += int(raw_input()).split(" ")
+	n -= 1
+if !s: print "YES"
+else: print "NO"
